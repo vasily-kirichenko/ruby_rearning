@@ -10,15 +10,9 @@ module Codebreaker
       @output.puts 'Enter guess:'
     end
 
-    def guess guess
-      if guess[0] == @secret[0]
-        mark = '+'
-      elsif @secret.include? guess[0]
-        mark = '-'
-      else
-        mark = ''
-      end
-      @output.puts mark
+    def guess(guess)
+      marker = Marker.new(@secret, guess)
+      @output.puts '+' * marker.exact_count + '-' * marker.number_count
     end
   end
 end
