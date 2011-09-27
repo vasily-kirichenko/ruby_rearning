@@ -2178,3 +2178,1183 @@ Rendered items/_form.html.erb (2.0ms)
   [1m[36m (1.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
   [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
   [1m[36m (0.0ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (37.2ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:01 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:38:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 15:38:02 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+Rendered items/_form.html.erb (4.6ms)
+Rendered items/_form.html.erb (3.5ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (56.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:40:34 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 3ms
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 15:40:34 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+Rendered items/_form.html.erb (5.1ms)
+Rendered items/_form.html.erb (3.8ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (29.5ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 115ms (Views: 112.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:41:50 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 15:41:51 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+Rendered items/_form.html.erb (5.1ms)
+Rendered items/_form.html.erb (3.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (29.5ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:07 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 114ms (Views: 111.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:07 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:07 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 12:42:08 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 3ms
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 15:42:08 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+Rendered items/_form.html.erb (4.5ms)
+Rendered items/_form.html.erb (4.4ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (50.5ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (1.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 74ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 11ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 9ms
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 7ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 15ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 5ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:02:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 6ms
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 16:02:11 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.1ms)
+Rendered items/_form.html.erb (25.9ms)
+Rendered items/_form.html.erb (4.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (67.3ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:09 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:09 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 10ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 81ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[35m (18.6ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 22ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 7ms
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.4ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 8ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:11:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 6ms
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 16:11:10 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.2ms)
+Rendered items/_form.html.erb (6.3ms)
+Rendered items/_form.html.erb (5.8ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (179.4ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:16 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:16 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 97ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:16 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:16 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (9.7ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 16ms
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 22ms
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 11ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 6ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (28.0ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:17 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 3ms
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 16:12:18 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+Rendered items/_form.html.erb (7.5ms)
+Rendered items/_form.html.erb (4.7ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (33.4ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 85.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 10ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 9ms
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 61ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 7ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 11ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 8ms
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:12:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 5ms
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 16:13:00 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.8ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+Rendered items/_form.html.erb (6.8ms)
+Rendered items/_form.html.erb (3.9ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (32.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 84.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  Processing by ItemsController#new as HTML
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 7ms
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT 1
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{}}
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"these"=>"params"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (56.3ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 19ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 10ms
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 15ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "items" 
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 18ms
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "items" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00], ["title", nil], ["updated_at", Sat, 24 Sep 2011 13:13:36 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 5ms
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "products" WHERE "products"."title" = '' LIMIT 1[0m
+
+
+Started GET "/items" for 127.0.0.1 at 2011-09-24 16:13:36 +0300
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+Rendered items/_form.html.erb (6.2ms)
+Rendered items/_form.html.erb (3.8ms)
